@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap'); 
+
+/* :root {
+    
+} */
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header , .card, footer {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    font-family: "calistoga" , sans-serif;
+    background-color: #9B287B;
+    color: white;
+}
+
+nav {
+    text-align: center;
+    background-color: #696773;
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    display: flex;
+    padding: 20px;
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+}
