@@ -46,7 +46,7 @@ a:hover {
     color: black;
 }
 
-h2 {
+.bio h2 {
     font-size: 1.5em;
     text-align: center;
     background-color: #9B287B;
@@ -83,7 +83,7 @@ p {
 }
 
 
-h3 {
+h2 {
     text-align: center;
     font-size: 30px;
     font-family: "patua one" , sans-serif;
