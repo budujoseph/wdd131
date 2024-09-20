@@ -8,19 +8,25 @@
     box-sizing: border-box;
 }
 
-header ,   footer {
-    max-width: 950px;
+body {
+    max-width: 1020px;
     margin: 0 auto;
     padding-bottom: 15px;
 }
 
 
+header {
+    margin-bottom: 1em;
+}
+
 .firstcard {
     border: 1px solid rgb(174, 177, 174);
     border-radius: 8px;
-    width: 700px;
+    width: 600px;
     margin-bottom: 10px;
-    
+    grid-column: 1/2;
+    margin-left: 10px;
+    box-shadow: 0 10px 20px rgb(174, 177, 174);
 }
 
 h1 {
@@ -49,8 +55,11 @@ nav {
 }
 
 a:hover {
-    background-color: white;
+    /* background-color: white; */
     color: black;
+    border-radius: 80px;
+    color: #68dae9;
+    transform: scale(1.2);
 }
 
 .bio h2 {
@@ -68,14 +77,12 @@ a:hover {
     width: 100px;
     height: auto;
     float: right;
-    /* margin-top: 20px; */
     margin-right: 20px;
 }
 
 p {
     font-size: 20px;
     padding: 20px 20px;
-    
 }
 
 .bio p {
@@ -86,7 +93,6 @@ p {
 .country {
     margin-top: 30px;
 }
-
 
 h2 {
     text-align: center;
@@ -133,6 +139,7 @@ h3 {
     background-color: #9B287B;
     color: white;
     text-align: center;
+    border-radius: 7px;
 
 }
 
@@ -148,9 +155,11 @@ li a {
     width: 850px;
     border: 1px solid rgb(174, 177, 174);
     border-radius:8px ;
-    width: 400px;
+    width: 350px;
     height: auto;
     margin-bottom: 10px;
+    grid-column:2/3;
+    box-shadow: 0 10px 20px rgb(174, 177, 174);
 }
 
 footer p {
@@ -162,17 +171,11 @@ footer p {
 
 
 main {
+    display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
 }
 
-
-.firstcard {
-    grid-column: 1/2;
-}
-
-.webdev {
-    grid-column:2/3;
-}
 
 
 
