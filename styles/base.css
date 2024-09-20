@@ -54,11 +54,11 @@ nav {
     box-sizing: border-box;
 }
 
-a:hover {
+nav a:hover {
     /* background-color: white; */
     color: black;
     border-radius: 80px;
-    color: #68dae9;
+    color: #d9e7e9;
     transform: scale(1.2);
 }
 
