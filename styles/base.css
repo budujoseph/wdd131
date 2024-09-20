@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
 
-/* :root {
-    
-} */
 
 * {
     margin: 0 auto;
@@ -11,10 +8,19 @@
     box-sizing: border-box;
 }
 
-header , .card, footer {
-    max-width: 850px;
+header ,   footer {
+    max-width: 950px;
     margin: 0 auto;
     padding-bottom: 15px;
+}
+
+
+.firstcard {
+    border: 1px solid rgb(174, 177, 174);
+    border-radius: 8px;
+    width: 700px;
+    margin-bottom: 10px;
+    
 }
 
 h1 {
@@ -39,6 +45,7 @@ nav {
     font-weight: 500;
     display: flex;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 a:hover {
@@ -53,17 +60,17 @@ a:hover {
     color: white;
     padding: 10px;
     border-radius: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     font-family: "patua one" , sans-serif;
 }
 
 .bio img {
-    width: 150px;
+    width: 100px;
     height: auto;
     float: right;
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    margin-right: 20px;
 }
-
 
 p {
     font-size: 20px;
@@ -76,10 +83,8 @@ p {
     padding: 20px;
 }
 
-.card {
-    border: 1px solid rgb(174, 177, 174);
-    border-radius: 9px;
-    padding-right: 10px;
+.country {
+    margin-top: 30px;
 }
 
 
@@ -104,14 +109,70 @@ figcaption {
 
 .country p {
     padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.country img {
+    margin-top: 20px;
 }
 
 hr {
-    width: 700px;
+    width: 450px;
+}
+
+ul {
+    margin: 5rem;
+    padding-top: 30px;
+}
+
+h3 {
+    padding-top: 10px;
+    font-family: "patua one" , sans-serif;
+    font-size: 30px;
+    background-color: #9B287B;
+    color: white;
+    text-align: center;
+
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+li a {
+    font-size: 20px;
+}
+
+.webdev {
+    width: 850px;
+    border: 1px solid rgb(174, 177, 174);
+    border-radius:8px ;
+    width: 400px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+footer p {
+    text-align: center;
+    background-color: #9B287B;
+    color: white;
+    font-family: "calistoga" , sans-serif;
 }
 
 
+main {
+    grid-template-columns: 1fr 1fr;
+}
 
+
+.firstcard {
+    grid-column: 1/2;
+}
+
+.webdev {
+    grid-column:2/3;
+}
 
 
 
