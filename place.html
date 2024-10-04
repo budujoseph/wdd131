@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About the Country</title>
+    <meta name="description" content="Ghana Georaphy">
+    <meta name="author" content="Joseph Budu Larbi">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script defer src="scripts/place.js"></script>
+</head>
+<body>
+    <header>
+            <h1>Mexico</h1>
+    </header>
+    <div class="blank"></div>
+    <main>
+            <picture class="hero-image">
+                <source srcset="images/hero-large.webp" media="(min-width: 640px)">
+                <img src="images/pix.webp"  alt="mexico landscape" width="500" height="250">
+                <div class="blank second"></div>
+            </picture>
+            
+        <section class="data">
+            <h2>Data</h2>
+            <ul class="datalist">
+                <li>Area:<span> 1,972,550 sq km</span></li>
+                <li>Population:<span> 130,861,007</span></li>
+                <li>Capital:<span> Mexico City</span></li>
+                <li>Languages:<span> Spanish</span></li>
+                <li>Currency:<span> Mexican Peso</span></li>
+                <li>Time Zone:<span> GMT-6</span></li>
+                <li>Calling Code:<span> +52</span></li>
+                <li>Internet TLD:<span> .mx</span></li>
+            </ul>
+        </section>
+        <section id="weather">
+            <div class="weather-header">
+                <h2>Weather</h2>
+                <img id="icon" src="images/icon.svg" alt="weather icon">
+            </div>
+            <div>
+                <span>Temperature: </span>
+                <span id="temp"></span>
+            </div>
+            <div>
+                <span>Condition: </span>
+                <span id="condition">
+            </div>
+            <div>
+                <span>Wind Speed: </span>
+                <span id="Wind"></span>
+            </div>
+            <div>
+                <span>Wind Chill</span>
+                <span id="chill"></span>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <p>
+            © 2024 🌴 Joseph Budu Larbi 🌴 Accra - Ghana
+            <span id="currentYear"></span> 
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

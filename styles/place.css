@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --header-background-color: #c810;
+    --data-weather-header-background-color: #006341;
+    --data-weather-details-background-color: #ffff;
+    --footer-background-color: #1b1217;
+
+    --header-font-family: 'calistoga' , sans-serif;
+    --data-weather-header-font-family: 'Roboto', sans-serif;
+}
+
+* { 
+    padding: 0;
+    margin: 0 auto;
+    max-width: 980px;
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    padding-bottom: 12px;
+    background-color: black;
+}
+
+.blank {
+    padding: 5px;
+    background-color: #f85971;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px 20px;
+    font-family: var(--header-font-family);
+    background-color: var(--header-background-color);
+    color: white;
+    font-size: 45px;
+}
+
+
+ul li {
+    list-style-type: none;
+    padding: 5px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+span {
+    font-weight: 500;
+}
+
+.datalist li {
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+
+.data {
+    text-align: center;
+    padding: 2em 2em;
+    background-color: rgb(248, 246, 245);
+    border-bottom: 1px solid brown;
+}
+
+.data h2 {
+    font-family: var(--data-weather-header-font-family);
+    font-size: 32px;
+    padding: .2em;
+} 
+
+.datalist {
+    padding-top: 20px;
+}
+
+.weather-header h2 {
+    text-align: center;
+    font-family: var(--data-weather-header-font-family);
+    font-size: 32px;
+}
+
+#icon {
+    background-position:-20px 0;
+    height:120px;
+    width:120px;
+}
+
+
+#weather {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(248, 246, 245);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+footer {
+    background-color: var(--footer-background-color);
+    text-align: center;
+    padding: 20px;
+}
+
+
+footer p {
+    color: white;
+    font-family: var(--header-font-family);
+    padding: 10px;
+} 
+
+
+
+
+@media screen and (min-width:640px) {
+    
+
+    main {
+        position: relative;
+    }
+
+    .second {
+        display: none;
+    }
+     
+
+    .data {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        opacity: .7;
+    }
+
+    section .weather {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        
+    }
+
+    section {
+        background-color: aliceblue;
+        margin: 0px;
+        opacity: 0.7;
+        text-align: center;
+        width: 250px;
+    }
+
+    .data h2 {
+        background-color: var(--data-weather-header-background-color);
+        text-align: left;
+        
+    }
+
+    
+}
+
+
+
