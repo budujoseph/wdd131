@@ -19,11 +19,10 @@
     <div class="blank"></div>
     <main>
             <picture class="hero-image">
-                <source srcset="images/hero-large.webp" media="(min-width: 640px)">
+                <source srcset="images/ndHero.webp" media="(min-width: 640px)">
                 <img src="images/pix.webp"  alt="mexico landscape" width="500" height="250">
-                <div class="blank second"></div>
             </picture>
-            
+            <div class="blank second"></div>
         <section class="data">
             <h2>Data</h2>
             <ul class="datalist">
@@ -39,24 +38,14 @@
         </section>
         <section id="weather">
             <div class="weather-header">
-                <h2>Weather</h2>
-                <img id="icon" src="images/icon.svg" alt="weather icon">
+                <h2>Weather<span><img id="icon" src="images/icon.svg" alt="weather icon"></span></h2>
+                <!-- <img id="icon" src="images/icon.svg" alt="weather icon"> -->
             </div>
-            <div>
-                <span>Temperature: </span>
-                <span id="temp"></span>
-            </div>
-            <div>
-                <span>Condition: </span>
-                <span id="condition">
-            </div>
-            <div>
-                <span>Wind Speed: </span>
-                <span id="Wind"></span>
-            </div>
-            <div>
-                <span>Wind Chill</span>
-                <span id="chill"></span>
+            <div class="weather-details">
+            <p><strong>Tempreature:</strong> <span id="temp">10</span> <sup><small>o</small></sup>C</p>
+            <p><strong>Conditions:</strong> Sunny </p>
+            <p><strong>Wind:</strong> <span id="wind">5</span> km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="windFactor"></span></p>
             </div>
         </section>
         
