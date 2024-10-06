@@ -138,7 +138,7 @@ footer p {
     h2 {
         margin-left: -37px;
         width: 155px;
-        opacity: 1;
+        opacity: .8;
         font-size: 1.3rem;
         padding: 10px;
     }
@@ -159,6 +159,7 @@ footer p {
         position: absolute;
         top: 20px;
         left:20px;
+        opacity: .8;
     } 
 
     .weather-header h2 {
@@ -170,6 +171,7 @@ footer p {
         position: absolute;
         bottom: 20px;
         right: 20px;
+        opacity: .8;
     } 
 
     #weather h2 {
