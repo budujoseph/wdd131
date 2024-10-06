@@ -28,7 +28,7 @@ header {
 
 .blank {
     padding: 5px;
-    background-color: #f85971;
+    background-color: #3d3938;
 }
 
 h1 {
@@ -137,7 +137,7 @@ footer p {
     h2 {
         margin-left: -37px;
         width: 155px;
-        opacity: .8;
+        opacity: .9;
         font-size: 1.3rem;
         padding: 10px;
     }
