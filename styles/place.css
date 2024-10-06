@@ -128,9 +128,9 @@ footer p {
 @media screen and (min-width:640px) {
     
 
-    /* main {
+    main {
         position: relative;
-    } */
+    }
 
     .second {
         display: none;
@@ -141,25 +141,32 @@ footer p {
         display: none;
     }
 
-    h2 span ::after {
+    #weather h2::after {
         content: "☀";
-        color: red;
+        color: yellow;
+
     }
      
 
-    /* .data {
+    .data {
         position: absolute;
         top: 20px;
-        left: 20px;
-        opacity: .7;
-    } */
+        left:20px;
+        opacity: .9;
+    } 
 
-    /* .weather {
+    .weather-header {
+        background-color: rgb(10, 10, 10);
+        color: rgb(253, 252, 252);
+    }
+
+    #weather {
         position: absolute;
         bottom: 20px;
         right: 20px;
+        opacity: .9;
         
-    } */
+    } 
 
     /* section {
         /* background-color: aliceblue; */
@@ -169,14 +176,20 @@ footer p {
         /* width: 250px; */
     /* } */ 
 
-    /*.data h2 {
-        background-color: red;
+    .data h2 {
+        background-color: rgb(10, 10, 10);
         text-align: left;
-        color: antiquewhite;
-        
-    } */
+        color: rgb(253, 252, 252);
+    } 
+
+    .data {
+        height: 350px;
+    }
 
 
-
+    .second {
+        padding: 0;
+        margin: 0;
+    }
     
 }
