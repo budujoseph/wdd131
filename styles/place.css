@@ -2,7 +2,6 @@
 
 :root {
     --header-background-color: #c810;
-    --data-weather-header-background-color: #006341;
     --data-weather-details-background-color: #ffff;
     --footer-background-color: #1b1217;
 
@@ -131,9 +130,9 @@ footer p {
         position: relative;
     }
 
-    .second {
+    /* .second {
         display: none;
-    }
+    } */
 
     h2 {
         margin-left: -37px;
