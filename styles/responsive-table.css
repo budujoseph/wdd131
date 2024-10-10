@@ -1,0 +1,59 @@
+*{
+    margin: 0 auto;
+    max-width: 980px;
+}
+
+body{
+    padding: 5px;
+}
+
+table {
+    border: 1px solid black;
+    width: 400px;
+    border-collapse: collapse;
+}
+
+caption {
+    caption-side: bottom;
+    font-size: small;
+    padding: .2rem;
+} 
+
+th, 
+td {
+    padding: .5rem 1rem;
+    border: 1px solid green;
+    white-space: pre;
+}
+
+thead th,
+tbody td {
+    text-align: center;
+}
+
+thead {
+    background-color: black;
+    color: white;
+}
+
+thead {
+    padding: 1rem;
+    font-size: larger;
+}
+
+tr:nth-last-child(1) {
+    background-color: #333;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eee;
+
+}
+
+.blank {
+    background-color: #000;
+}
+
+
+
+

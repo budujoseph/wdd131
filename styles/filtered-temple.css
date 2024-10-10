@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+
+* {
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+header {
+	display: flex;
+	justify-content: space-around;
+	padding: 20px 20px;
+	background-color: #040f16;
+}
+
+h1 {
+	font-family: "Calistoga",sans-serif;
+	color: white;
+}
+
+li a {
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 700;
+	padding: 10px;
+	color: #f2f7f2;
+}
+
+nav ul {
+	list-style: none;
+} 
+
+nav:hover {
+	cursor: pointer;
+}
+
+nav ul li {
+	display: none;
+	padding: 8px;
+}
+
+nav ul li a:hover {
+	color: black;
+	background-color: white;
+	border-radius: 4px;
+}
+
+nav::before {
+	content: "☰";
+	color: white;
+	font-size: 40px;
+}
+
+nav.show::before{
+	content: "❌";
+	color: white;
+	padding-left: 50px;
+	font-size: 30px;
+}
+
+.show li  {
+	display: block;
+}
+
+img {
+	width: 100%;
+	border-radius: 3px;
+}
+
+figure {
+	padding: 10px;
+}
+
+figcaption {
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif; 
+}
+
+h2 {
+	font-family: "Calistoga",sans-serif;
+	padding: 15px;
+	text-align: center;
+}
+
+
+main div {
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 1rem;
+	margin: 0 auto;
+
+}
+
+
+footer {
+	text-align: center;
+	padding: 30px;
+	background-color: #040f16;
+	color: white;
+}
+
+footer p {
+	font-weight: 500;
+	font-size: 25px;
+}
+
+

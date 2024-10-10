@@ -181,7 +181,11 @@ main {
 
 
 
-
+@media screen and (min-width: 650px){
+    main {
+        display: grid;
+    }
+}
 
 
 

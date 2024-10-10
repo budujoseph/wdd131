@@ -1,0 +1,39 @@
+
+@media screen and (min-width: 640px) {
+
+    header {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 1em;
+    }
+
+    nav::before {
+        display: none;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 5px 20px;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 3px;
+    }
+    
+
+    main div {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    
+}
+    
+
+    
