@@ -13,6 +13,8 @@ hamburger.addEventListener('click' ,() => {
     hamburger.classList.toggle('show');
 })
 
+
+
 const temples = [
     {
       templeName: "Aba Nigeria",
@@ -97,7 +99,35 @@ const temples = [
     // Add more temple objects here...
   ];
 
-  temples.forEach(templeCard), {
+  const oldPage = document.getElementById('old');
+  const newPage = document.getElementById('new');
+  const largePage = document.getElementById('large');
+  const smallPage = document.getElementById('small');
+  const header = document.querySelector('h1');
 
+  function createTempleCard() {
+    temples.forEach(temple => {
+      let card = document.createElement('section');
+      let name = document.createElement('h3');
+      let location = document.createElement('p');
+      let dedication = document.createElement('p');
+      let area = document.createElement('p');
+      let img = document.createElement('img');
+
+      name.textContent = temple.templeName;
+      location.innerHTML = `<p>Location: </p> ${temples.location}`;
+      dedication.innerHTML = `<p> Dedicated: </p> ${temples.dedicated}`;
+      area.innerHTML = `<p> Area: </p> ${temples.area} sq ft`;
+      img.setAttribute('src', temples.imageUrl);
+      img.setAttribute('alt', `${temples.templeName} Temple`);
+      img.setAttribute('loading', "lazy");
+
+      card.appendChild(name);
+      card.appendChild(location);
+      card.appendChild(dedication);
+      card.appendChild(area);
+      card.appendChild(img);
+
+      document.querySelector('.temples-grid').appendChild(card);
+    });
   }
-
