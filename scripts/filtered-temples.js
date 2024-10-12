@@ -99,15 +99,16 @@ const temples = [
   // Add more temple objects here...
 ];
 
-const homeLink = document.getAnimations('home');
+const homeLink = document.getElementById('home');
 const oldLink = document.getElementById('old');
 const newLink = document.getElementById('new');
 const largeLink = document.getElementById('large');
 const smallLink = document.getElementById('small');
 const header = document.querySelector('h2');
 
-function createTempleCard() {
-  temples.forEach(temple => {
+function createTempleCard(filteredTemples) {
+  document.querySelector('.temples-grid').innerHTML = '';
+  filteredTemples.forEach(temple => {
     let card = document.createElement('section');
     card.classList.add('temp');
     let name = document.createElement('h3');
@@ -134,18 +135,50 @@ function createTempleCard() {
   });
 }
 
-    document.addEventListener('DOMContentLoaded', createTempleCard);
+  document.addEventListener('DOMContentLoaded', createTempleCard(temples));
 
 
-    // homeLink.addEventListener(click, ()=> {
-    //   header.textContent = "Home";
-    //   createTempleCard(temples);
-    // })
 
-    // oldLink.addEventListener(click, () => {
-    //   header.textContent = "Old";
-    //   createTempleCard(temples.filter(temple => {
-    //     const year = new Date(temple.dedicated.split(',')[0]).getFullYear()
-    //     return year < 1900;
-    //   }));
-    // })
+    oldLink.addEventListener('click', () => {
+      createTempleCard(temples.filter(temple => {
+        const year = new Date(temple.dedicated.split(',')[0]).getFullYear();
+        return year < 1900;
+      }));
+
+      header.textContent = "Old Temples";
+    });
+
+    newLink.addEventListener('click', () => {
+      createTempleCard(temples.filter(temple => {
+        const year = new Date(temple.dedicated.split(',')[0]).getFullYear();
+        return year > 2000;
+      }));
+
+      header.textContent = " New Temples";
+    });
+
+    largeLink.addEventListener('click', () => {
+      createTempleCard(temples.filter(temple => temple.area > 90000));
+
+      header.textContent = "Large Temples";
+    });
+
+    smallLink.addEventListener('click', () => {
+      createTempleCard(temples.filter(temple => temple.area < 10000));
+
+      header.textContent = 'Small Temples';
+    });
+
+
+    homeLink.addEventListener('click', ()=> {
+      header.textContent = "Home";
+      createTempleCard(temples);
+      });
+
+      document.addEventListener('DOMContentLoaded', createTempleCard(temples));
+
+
+
+  
+
+   
