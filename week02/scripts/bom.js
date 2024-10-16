@@ -19,7 +19,21 @@ list.appendChild(li);
 
 
 button.addEventListener('click', function() {
-    if(trim()!== '') {
+    if(input.value.trim() !== '') {
+        li.textContent = input.value;
+        li.appendChild(delBtn);
+        list.appendChild(li);
         
+    } else {
+        alert('Please fill out this field');
+        input.focus();
     }
-})
+});
+
+delBtn.addEventListener('click', () => {
+    list.removeChild(li);
+    input.focus();
+});
+
+input.value = '';
+input.focus();
