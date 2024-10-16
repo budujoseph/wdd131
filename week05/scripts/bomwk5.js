@@ -37,7 +37,6 @@ function displayList(item){
         li.appendChild(delBtn);
         list.appendChild(li);
 
-        input.value = '';
         input.focus();
 
 
