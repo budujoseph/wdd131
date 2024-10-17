@@ -1,0 +1,109 @@
+
+html {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1922a5;
+    color: white;
+    padding: 6px;
+    /* width: 100%; */
+    border-radius: 8px;
+}
+
+form {
+    background-color: rgb(212, 226, 238);
+    margin: 0 auto;
+    width: 100%;
+}
+
+ 
+
+footer {
+    font-family: 'Roboto', sans-serif;
+    background-color: #2136b1;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    margin-top: .5rem;
+    border-radius: 8px;
+}
+
+.myform label {
+    display: block;
+    font-family: 0.9rem;
+    font-size: large;
+    padding: .5rem;
+}
+
+.myform div {
+    padding: .3em;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+}
+
+
+.myform input[type="text"], 
+.myform textarea,
+.myform input[type="date"],
+.myform select               
+{
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #0f0f0f;
+    width: 100%;
+    max-width: 420px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* appearance: none; */
+
+}
+
+.myform input[type="radio"],
+.myform input[type="checkbox"]
+{
+    margin-right: 6px;
+}
+
+
+.myform input[type="submit"] {
+    border: none;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin-top: .5rem;
+    box-shadow: 1px 1px 4px #999;
+    font-weight: 700;
+    margin-left: 2.2rem;
+    background-color: #0a44f1;
+    font-size: 20px;
+    color: white;
+}
+
+.myform input[type="submit"]:hover {
+    background-color: rgb(102, 25, 202);
+}
+
+.myform span {
+    color: blue;
+} 
+
+.all span {
+    color: black;
+    font-style: italic;
+}
+
+.myform textarea {
+    scroll-padding-block: 10px;
+    height: 150px;
+}
+
+

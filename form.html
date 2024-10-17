@@ -6,17 +6,52 @@
     <title>Product Review Form</title>
     <meta name="description" content="Product Review Form">
     <meta name="author" content="Joseph Budu Larbi">
-    <!-- preconnect fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/form.css">
     <script defer src="scripts/form.js"></script>
 </head>
 <body>
+    
     <header>
-        <!-- FORM HEADING -->
+        <h1>Product Review</h1>
     </header>
     <main>
-        <form>
-            <!-- FORM CONTENT -->
+        <form class="myform" action="review.html" method="get">
+            <!-- Products name to be selected populated by javascript -->
+           <label>Product Name
+            <select id="productname" name="productname" required>
+                <option value="" disabled selected>Select a Product</option>
+                <option value="fluxcapacitor"></option>
+                <option value="powerlaces"></option>
+                <option value="timecircuits"></option>
+                <option value="lowvoltagereactor"></option>
+                <option value="warpequilizer"></option>
+            </select>
+           </label>
+           <!-- Radio buttons with star -->
+           <div>Overall Rating</div>
+           <label><input type="radio" name="rating" value="1" id="star1">&#9733;</label>
+           <label><input type="radio" name="rating" value="2" id="star2">&#9733; &#9733;</label>
+           <label><input type="radio" name="rating" value="3" id="star3">&#9733; &#9733; &#9733;</label>
+           <label><input type="radio" name="rating" value="4" id="star4">&#9733; &#9733; &#9733; &#9733;</label>
+           <label><input type="radio" name="rating" value="5" id="star5">&#9733; &#9733; &#9733; &#9733; &#9733;</label>
+
+           <label>Date Of Installation<input type="date" id="installationdate" required></label>
+
+           <div class="all">Which features did you find useful in the product<br><span>(check all that apply)</span></div>
+           <label><input type="checkbox" name="durability" value="yes" id="durability">Durability</label>
+           <label><input type="checkbox" name="ease" value="yes" id="ease">Ease of Use</label>
+           <label><input type="checkbox" name="performance" value="yes" id="performance">Performance</label>
+           <label><input type="checkbox" name="design" value="yes" id="design">Design</label>
+
+           <label>Written Review<span>(Optional)</span><textarea id="wrtreview" name="wrtreview" placeholder="Type Your Review"></textarea></label>
+
+           <label>Your Name<span>(Optional)</span><input type="text" name="name" id="name"></label>
+
+           <input type="submit" value="Submit Review">
+
         </form>
     </main>
     <footer>
@@ -25,7 +60,6 @@
             <span id="currentYear"></span> 
         </p>
         <p id="lastModified"></p>
-    </footer>
     </footer>
 </body>
 </html>
