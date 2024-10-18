@@ -37,7 +37,7 @@ footer {
 
 .myform label {
     display: block;
-    font-family: 0.9rem;
+    font-family: 'Times New Roman', Times, serif;
     font-size: large;
     padding: .5rem;
 }
@@ -63,6 +63,7 @@ footer {
     max-width: 400px;
     width: 96%;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: whitesmoke;
 }
 
 .myform input[type="radio"],
