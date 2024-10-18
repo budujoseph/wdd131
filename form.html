@@ -32,19 +32,31 @@
            </label>
            <!-- Radio buttons with star -->
            <div>Overall Rating</div>
-           <label><input type="radio" name="rating" value="1" id="star1">&#9733;</label>
-           <label><input type="radio" name="rating" value="2" id="star2">&#9733; &#9733;</label>
-           <label><input type="radio" name="rating" value="3" id="star3">&#9733; &#9733; &#9733;</label>
-           <label><input type="radio" name="rating" value="4" id="star4">&#9733; &#9733; &#9733; &#9733;</label>
-           <label><input type="radio" name="rating" value="5" id="star5">&#9733; &#9733; &#9733; &#9733; &#9733;</label>
+           <div class="ratings">
+                <div>
+                    <label>&#9734;<input type="radio" name="rating" id="star1"></label>
+                </div>
+                <div>
+                    <label>&#9734; &#9734;<input type="radio" name="rating" id="star2"></label>
+                </div>
+                <div>
+                    <label>&#9734; &#9734; &#9734;<input type="radio" name="rating" id="star3"></label>
+                </div>
+                <div>
+                    <label>&#9734; &#9734; &#9734; &#9734;<input type="radio" name="rating" id="star4"></label>
+                </div>
+                <div>
+                    <label>&#9734; &#9734; &#9734; &#9734; &#9734;<input type="radio" name="rating" id="star5"></label>
+                </div>
+           </div>
 
            <label>Date Of Installation<input type="date" id="installationdate" required></label>
 
            <div class="all">Which features did you find useful in the product<br><span>(check all that apply)</span></div>
-           <label><input type="checkbox" name="durability" value="yes" id="durability">Durability</label>
-           <label><input type="checkbox" name="ease" value="yes" id="ease">Ease of Use</label>
-           <label><input type="checkbox" name="performance" value="yes" id="performance">Performance</label>
-           <label><input type="checkbox" name="design" value="yes" id="design">Design</label>
+           <label><input type="checkbox" name="durability" value="yes" id="check1">Durability</label>
+           <label><input type="checkbox" name="ease" value="yes" id="check2">Ease of Use</label>
+           <label><input type="checkbox" name="performance" value="yes" id="check3">Performance</label>
+           <label><input type="checkbox" name="design" value="yes" id="check4">Design</label>
 
            <label>Written Review<span>(Optional)</span><textarea id="wrtreview" name="wrtreview" placeholder="Type Your Review"></textarea></label>
 
