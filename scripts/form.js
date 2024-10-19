@@ -5,6 +5,8 @@ const lastModified = document.lastModified;
 document.getElementById('lastModified').textContent = `Last Modification: ${lastModified}`;
 
 
+
+
 const products = [
     {
       id: "fc-1888",
@@ -42,3 +44,29 @@ products.forEach(product  => {
     options.textContent = product.name;
     productName.appendChild(options);
 });
+
+const reviewPage = window.location.pathname;
+
+function loadReviewCount(){
+  let reviewCount = localStorage.getItem('reviewCount');
+  if(reviewCount === null){
+    reviewCount = 0;
+  }
+    
+}
+
+function reviewIncreament() {
+  let reviewCount = localStorage.getItem('reviewCount');
+  if(reviewCount === null){
+    reviewCount = 0;
+  }
+    reviewCount = parseInt(reviewCount) +1;
+    localStorage.setItem('reviewCount', reviewCount);
+}
+
+window.onload = function(){
+  if(reviewPage.includes('review.html')){
+    reviewIncreament();
+  loadReviewCount();
+  }
+};

@@ -3,6 +3,7 @@ body {
     max-width: 450px;
     margin: 0 auto;
     padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -11,7 +12,7 @@ header {
     font-family: 'Roboto', sans-serif;
     background-color: #1922a5;
     color: white;
-    padding: 15px;
+    padding: 3px;
     border-radius: 3px;
     margin:.8rem 0;
 }
@@ -35,24 +36,24 @@ footer {
     border-radius: 8px;
 }
 
-.myform label {
+#myform label {
     display: block;
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
     padding: .5rem;
 }
 
-.myform div {
+#myform div {
     padding: .3em;
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.1rem;
 }
 
 
-.myform input[type="text"], 
-.myform textarea,
-.myform input[type="date"],
-.myform select               
+#myform input[type="text"], 
+#myform textarea,
+#myform input[type="date"],
+#myform select               
 {
     background-color: #eee;
     display: block;
@@ -66,14 +67,14 @@ footer {
     background-color: whitesmoke;
 }
 
-.myform input[type="radio"],
-.myform input[type="checkbox"]
+#myform input[type="radio"],
+#myform input[type="checkbox"]
 {
     margin-right: 6px;
 }
 
 
-.myform input[type="submit"] {
+#myform input[type="submit"] {
     border: none;
     border-radius: 6px;
     padding: .8rem;
@@ -87,12 +88,12 @@ footer {
     width: 96%;
 }
 
-.myform input[type="submit"]:hover {
+#myform input[type="submit"]:hover {
     background-color: rgb(102, 25, 202);
     cursor: pointer;
 }
 
-.myform span {
+#myform span {
     color: blue;
 } 
 
@@ -101,7 +102,7 @@ footer {
     font-style: italic;
 }
 
-.myform textarea {
+#myform textarea {
     scroll-padding-block: 10px;
     height: 100px;
 }
@@ -112,7 +113,7 @@ footer {
 }
 
 
-.myform input[type="radio"] {
+#myform input[type="radio"] {
     display: block;
     text-align: center;
     display: inline-block;
