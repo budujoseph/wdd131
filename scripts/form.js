@@ -45,28 +45,28 @@ products.forEach(product  => {
     productName.appendChild(options);
 });
 
-const reviewPage = window.location.pathname;
+// const reviewPage = window.location.pathname;
 
-function loadReviewCount(){
-  let reviewCount = localStorage.getItem('reviewCount');
-  if(reviewCount === null){
-    reviewCount = 0;
-  }
+// function loadReviewCount(){
+//   let reviewCount = localStorage.getItem('reviewCount');
+//   if(reviewCount === null){
+//     reviewCount = 0;
+//   }
     
-}
+// }
 
-function reviewIncreament() {
-  let reviewCount = localStorage.getItem('reviewCount');
-  if(reviewCount === null){
-    reviewCount = 0;
-  }
-    reviewCount = parseInt(reviewCount) +1;
-    localStorage.setItem('reviewCount', reviewCount);
-}
+// function reviewIncreament() {
+//   let reviewCount = localStorage.getItem('reviewCount');
+//   if(reviewCount === null){
+//     reviewCount = 0;
+//   }
+//     reviewCount = parseInt(reviewCount) +1;
+//     localStorage.setItem('reviewCount', reviewCount);
+// }
 
-window.onload = function(){
-  if(reviewPage.includes('review.html')){
-    reviewIncreament();
-  loadReviewCount();
-  }
-};
+// window.onload = function(){
+//   if(reviewPage.includes('review.html')){
+//     reviewIncreament();
+//   loadReviewCount();
+//   }
+// };

@@ -123,4 +123,11 @@ footer {
     text-align: center;
 }
 
+#para {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin-top: 5rem;
+}
+
 
