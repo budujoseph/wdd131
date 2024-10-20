@@ -1,0 +1,20 @@
+
+h1 {
+    font-family: 'Montserrat';
+    color: #6b0504;
+    background-color: #ffce1b;
+}
+
+p, a{
+    font-family: 'Raleway';
+    font-size: 20px;
+    color: #ac403a;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
