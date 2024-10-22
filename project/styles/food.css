@@ -165,12 +165,21 @@ h5 {
     color: var(--heading-color);
 }
 
-#subform label {
+/* #subform label {
     font-size: 1.2rem;
     font-family: var(--body-text-font);
-    margin-bottom: .5rem;
     color: var(--heading-color);
-    text-align: left;
+    font-weight: 700;
+    margin: .3em;
+} */
+
+ #subform span {
+    color: var(--heading-color);
+    font-size: 1.2rem;
+    margin-bottom: .2rem;
+    /* text-align: left; */
+    display: block;
+
 }
 
 
@@ -271,6 +280,11 @@ footer p{
 
     input[type = "submit"]{
         width: 30%;
+    }
+
+    #subform span {
+        margin-left: -12em;
+    
     }
 
 
