@@ -90,15 +90,16 @@ h2 {
 }
 
 .body-grid img {
-    width: 300px;
+    /* width: 300px; */
     border-radius: 7px;
-    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 
 .hero img {
     width: 100%;
-    /* position: absolute; */
+    height: auto;
 }
 
 .hero p {
@@ -165,9 +166,9 @@ h5 {
 #subform label {
     font-size: 1.2rem;
     font-family: var(--body-text-font);
-    margin-left: -29rem;
     margin-bottom: .5rem;
     color: var(--heading-color);
+    display: block;
 }
 
 
@@ -175,13 +176,13 @@ h5 {
 input[type = "submit"]{
     padding: 12px;
     height: 44px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     border-radius: 5px;
     font-family: var(--body-text-font);
     text-align: center;
     margin-top: .5rem;
-    width: 20%;
+    width: 30%;
 }
 
 #subform input[type="submit"]:hover {
@@ -194,11 +195,12 @@ input[type = "submit"]{
 
 input[type = "email"] {
     height: 2.5rem;
-    width: 40em;
     margin: 0 auto;
     display: block; 
     border-radius: .6em;
     padding: 10px;
+    width: 100%;
+    max-width: 40em;
 }
 
 footer {
@@ -219,7 +221,7 @@ footer p{
 @media screen and (min-width: 980px) {
 
     .body-grid img {
-        width: 450px;
+        /* width: 450px; */
         border-radius: 7px;
         width: 100%;
     }
