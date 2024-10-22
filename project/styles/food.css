@@ -1,6 +1,6 @@
 :root {
     --heading-color: #6b0504;
-    --heading-background-color: #ffce1b;
+    --heading-background-color: #d2b48c;
     --paragraph-color: #ac403a;
 
     --heading-and-navigations-font: "Montserrat";
@@ -25,7 +25,7 @@ header {
 	display: flex;
 	justify-content: space-around;
 	padding: 20px 20px;
-	background-color: #d2b48c;
+	background-color: var(--heading-background-color);
 }
 
 h1 {
@@ -90,7 +90,6 @@ h2 {
 }
 
 .body-grid img {
-    /* width: 300px; */
     border-radius: 7px;
     max-width: 100%;
     height: auto;
@@ -149,10 +148,13 @@ h2 {
 
 #subform {
     margin-top: 1.5rem;
-    /* width: 100%; */
+    width: 100%;
     text-align: center;
     background-color: rgb(224, 216, 204);
     padding: 20px;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
 }
 
 h5 {
@@ -168,7 +170,7 @@ h5 {
     font-family: var(--body-text-font);
     margin-bottom: .5rem;
     color: var(--heading-color);
-    display: block;
+    text-align: left;
 }
 
 
@@ -182,7 +184,7 @@ input[type = "submit"]{
     font-family: var(--body-text-font);
     text-align: center;
     margin-top: .5rem;
-    width: 30%;
+    width: 80%;
 }
 
 #subform input[type="submit"]:hover {
@@ -196,7 +198,7 @@ input[type = "submit"]{
 input[type = "email"] {
     height: 2.5rem;
     margin: 0 auto;
-    display: block; 
+    display: block;
     border-radius: .6em;
     padding: 10px;
     width: 100%;
@@ -265,6 +267,10 @@ footer p{
     .hero p {
         list-style: none;
         display: none;
+    }
+
+    input[type = "submit"]{
+        width: 30%;
     }
 
 
