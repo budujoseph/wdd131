@@ -15,6 +15,7 @@
     /* max-width: 980px; */
 }
 
+
 header,
 main,
 footer {
@@ -78,6 +79,13 @@ header nav.show::before{
 	display: block;
 }
 
+nav ul li a.active {
+    color: var(--heading-color);
+    background-color: #fff; 
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: underline;
+}
 
 h2 {
     margin-top: .8rem;
@@ -109,6 +117,7 @@ h2 {
     top: .9rem;
     background-color: white;
 }
+
 
 .body-grid {
     display: grid;
@@ -165,19 +174,12 @@ h5 {
     color: var(--heading-color);
 }
 
-/* #subform label {
-    font-size: 1.2rem;
-    font-family: var(--body-text-font);
-    color: var(--heading-color);
-    font-weight: 700;
-    margin: .3em;
-} */
 
  #subform span {
     color: var(--heading-color);
+    font-family: var(--body-text-font);
     font-size: 1.2rem;
     margin-bottom: .2rem;
-    /* text-align: left; */
     display: block;
 
 }
@@ -215,8 +217,9 @@ input[type = "email"] {
 }
 
 footer {
-    padding-top: 50px;
+    padding-top: 20px;
     align-items: center;
+    max-width: 100%;
 
 }
 
@@ -226,6 +229,20 @@ footer p{
     font-family: var(--body-text-font);
     text-align: center;
 }
+
+.footer-info h4 {
+    text-align: center;
+    font-size: 1.7rem;
+    padding: .5rem;
+    color: var(--paragraph-color);
+}
+
+#media {
+    display: flex;
+    margin-top: .5rem;
+}
+
+
 
 
 
@@ -286,6 +303,13 @@ footer p{
         margin-left: -12em;
     
     }
+    
+    #media {
+    display: flex;
+    margin-top: .5rem;
+    width: 50%;
+}
 
+    
 
 }
