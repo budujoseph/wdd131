@@ -18,3 +18,64 @@ navLinks.forEach(link => {
 
     }
 })
+
+
+const menuItems = [
+    {
+        foodName: "BBQ Bacon Cheeseburger",
+        price: "Gh₵ 50.00",
+        imageUrl:
+         "https://images.pexels.com/photos/552056/pexels-photo-552056.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+        foodName: "",
+        price: "",
+        imageUrl:
+            ""
+    },
+    {
+        foodName: "",
+        price: "",
+        imageUrl:
+            ""
+    },
+    {
+        foodName: "",
+        price: "",
+        imageUrl:
+          ""
+    },
+    {
+        foodName: "",
+        price: "",
+        imageUrl:
+          ""
+    },
+    {
+        foodName: "",
+        price: "",
+        imageUrl:
+          ""
+    },
+    {
+        foodName: "",
+        price: "",
+        imageUrl:
+          ""
+    },
+  
+    {
+        foodName: "",
+        price: "",
+        imageUrl:
+          ""
+    },
+
+    {
+        foodName: "",
+        price: "",
+        imageUrl:
+          ""
+    },
+    
+  ];
