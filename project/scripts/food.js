@@ -23,25 +23,25 @@ navLinks.forEach(link => {
 const menuItems = [
     {
         foodName: "BBQ Bacon Cheeseburger",
-        foodPrice: "GH₵ 50.00",
+        foodPrice: "GH₵50.00",
         imageUrl:
          "https://images.pexels.com/photos/552056/pexels-photo-552056.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         foodName: "The Magic Plate",
-        foodPrice: "GH₵ 60.00",
+        foodPrice: "GH₵60.00",
         imageUrl:
             "https://cdn.pixabay.com/photo/2022/02/08/03/48/rice-7000691_1280.jpg"
     },
     {
         foodName: "Breeze Rice",
-        foodPrice: "GH₵ 20.00",
+        foodPrice: "GH₵20.00",
         imageUrl:
             "https://images.pexels.com/photos/3926124/pexels-photo-3926124.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         foodName: "Hot Dog",
-        foodPrice: "GH₵ 45.65",
+        foodPrice: "GH₵45.65",
         imageUrl:
           "https://images.pexels.com/photos/3023479/pexels-photo-3023479.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
