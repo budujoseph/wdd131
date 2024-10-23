@@ -41,7 +41,7 @@ const menuItems = [
     },
     {
         foodName: "Hot Dog",
-        foodPricerice: "GH₵ 45.65",
+        foodPrice: "GH₵ 45.65",
         imageUrl:
           "https://images.pexels.com/photos/3023479/pexels-photo-3023479.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
