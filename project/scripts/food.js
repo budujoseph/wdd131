@@ -23,59 +23,67 @@ navLinks.forEach(link => {
 const menuItems = [
     {
         foodName: "BBQ Bacon Cheeseburger",
-        price: "Gh₵ 50.00",
+        foodPrice: "GH₵ 50.00",
         imageUrl:
          "https://images.pexels.com/photos/552056/pexels-photo-552056.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
-        foodName: "",
-        price: "",
+        foodName: "The Magic Plate",
+        foodPrice: "GH₵ 60.00",
         imageUrl:
-            ""
+            "https://images.pexels.com/photos/25440677/pexels-photo-25440677/free-photo-of-meal-with-rice-chicken-and-french-fries-on-plate.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
-        foodName: "",
-        price: "",
+        foodName: "Breeze Rice",
+        foodPrice: "GH₵ 20.00",
         imageUrl:
-            ""
+            "https://images.pexels.com/photos/3926124/pexels-photo-3926124.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
-        foodName: "",
-        price: "",
+        foodName: "Hot Dog",
+        foodPricerice: "GH₵ 45.65",
         imageUrl:
-          ""
+          "https://images.pexels.com/photos/3023479/pexels-photo-3023479.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
-        foodName: "",
-        price: "",
+        foodName: "Mighty Meat Feast",
+        foodPrice: "GH₵80.25",
         imageUrl:
-          ""
+          "https://images.pexels.com/photos/845812/pexels-photo-845812.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
-        foodName: "",
-        price: "",
+        foodName: "Ultimate Cheesy Crust",
+        foodPrice: "GH₵70.00 ",
         imageUrl:
-          ""
+          "https://images.pexels.com/photos/1647163/pexels-photo-1647163.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
-    {
-        foodName: "",
-        price: "",
-        imageUrl:
-          ""
-    },
-  
-    {
-        foodName: "",
-        price: "",
-        imageUrl:
-          ""
-    },
-
-    {
-        foodName: "",
-        price: "",
-        imageUrl:
-          ""
-    },
-    
   ];
+
+  
+
+function createMenuSect(foodMenu) {
+    foodMenu.forEach(menu => {
+        let sect = document.createElement('section');
+        sect.classList.add('mymenu');
+        let img = document.createElement('img');
+        let name = document.createElement('h1');
+        let price = document.createElement('p');
+
+        img.setAttribute('src', menu.imageUrl);
+        img.setAttribute('alt' ,`${menu.foodName}`);
+        img.setAttribute('loading', "lazy");
+        img.setAttribute('width', '200px');
+        name.textContent = menu.foodName;
+        price.innerHTML = `<p><em>Price: </em><span>${menu.foodPrice}</span></p>`;
+
+        sect.appendChild(img);
+        sect.appendChild(name);
+        sect.appendChild(price);
+
+        document.getElementById('menuItems').appendChild(sect);
+
+        
+    });
+}
+
+document.addEventListener('DOMContentLoaded', createMenuSect(menuItems));
