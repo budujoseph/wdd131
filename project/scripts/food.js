@@ -31,7 +31,7 @@ const menuItems = [
         foodName: "The Magic Plate",
         foodPrice: "GH₵ 60.00",
         imageUrl:
-            "https://images.pexels.com/photos/25440677/pexels-photo-25440677/free-photo-of-meal-with-rice-chicken-and-french-fries-on-plate.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            "https://cdn.pixabay.com/photo/2022/02/08/03/48/rice-7000691_1280.jpg"
     },
     {
         foodName: "Breeze Rice",
@@ -66,7 +66,7 @@ function createMenuSect(foodMenu) {
         let sect = document.createElement('section');
         sect.classList.add('mymenu');
         let img = document.createElement('img');
-        let name = document.createElement('h1');
+        let name = document.createElement('h3');
         let price = document.createElement('p');
 
         img.setAttribute('src', menu.imageUrl);
