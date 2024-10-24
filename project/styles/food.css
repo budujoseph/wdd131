@@ -30,6 +30,10 @@ header {
 	justify-content: space-around;
 	padding: 20px 20px;
 	background-color: var(--heading-background-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
 }
 
 h1 {
@@ -314,6 +318,7 @@ footer p{
     max-width: 25em;
     text-align: center;
     border-radius: 8px;
+    margin-right: .5rem;
 }
 
 #menuItems {
@@ -349,6 +354,78 @@ footer p{
     color: black;
 }
 
+.address h2 {
+    font-size: 1.5rem;
+    font-family: var(--heading-and-navigations-font);
+}
+
+.address p {
+    font-size: 1.2rem;
+    font-family: var(--body-text-font);
+}
+
+.map {
+    max-width: 40rem;
+    width: 100%;
+    height: auto;
+}
+
+.contact-map  {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.work-table {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.work-table caption {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: var(--heading-color);
+    font-family: var(--heading-and-navigations-font);
+}
+
+.hours-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 0;
+}
+
+.hours-table th, .hours-table td {
+    padding: .5rem; 
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.hours-table th {
+    color: var(--paragraph-color);
+    font-family: var(--heading-and-navigations-font);
+    font-size: 18px;
+}
+
+.hours-table td {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: .3rem;
+}
+
+.hours-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
 
 
 
@@ -424,6 +501,24 @@ footer p{
         flex-wrap: wrap;
 
     }
+
+    .contact-map  {
+       display: flex;
+       box-sizing: border-box;
+       max-width: 100%;
+       margin-top: 2rem;
+       width: 60rem;
+    }
+
+
+    .address {
+        margin-top: 4rem;
+    }
+
+    .address p {
+        padding: .9rem;
+    }
+
 
     
 
