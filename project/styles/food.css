@@ -427,6 +427,25 @@ form {
     background-color: #f9f9f9;
 }
 
+.about-us h2 {
+    font-family: var(--body-text-font);
+    position: absolute;
+    text-align: center;
+    bottom: 5em;
+    background-color: azure;
+    width: 100%;
+    max-width: 100rem;
+    opacity: .8;
+    color: var(--heading-color);
+    padding: 2rem;
+
+}
+
+.about-us {
+    width: 100%;
+    position: relative;
+}
+
 
 
 
