@@ -453,6 +453,7 @@ form {
     grid-template-columns: 1fr;
     padding: 1.3rem;
     border: 1px solid gray;
+    margin-bottom: 2rem;
 }
 
 .about-section img {
@@ -479,6 +480,26 @@ form {
     padding: .3rem;
     line-height: 1.5;
     font-size: 1.3rem;
+    width: 100%;
+}
+
+.team h3 {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-family: var(--heading-and-navigations-font);
+    color: var(--heading-color);
+}
+
+.team h4 {
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: var(--heading-and-navigations-font);
+    color: var(--heading-color);
+}
+
+.chef {
+    margin-bottom: 1.2rem;
 }
 
 
@@ -576,6 +597,12 @@ form {
     .about-section {
         width: 100%;
         display: flex;
+    }
+
+    .our-team {
+        display: flex;
+        gap: 1.5rem;
+        margin-top: 2rem;
     }
 
 
