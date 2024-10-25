@@ -444,6 +444,41 @@ form {
 .about-us {
     width: 100%;
     position: relative;
+    margin-bottom: 5em;
+}
+
+.about-section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1.3rem;
+    border: 1px solid gray;
+}
+
+.about-section img {
+    width: 100%;
+    margin-top: 1.7rem;
+    max-width: 40em;
+}
+
+.about-article {
+    text-align: center;
+    padding: 10px;
+    /* margin-right: .5rem; */
+}
+
+.about-article h3 {
+    font-family: var(--heading-and-navigations-font);
+    font-size: 1.5rem;
+    padding: .5rem;
+    color: var(--heading-color);
+}
+
+.about-article p {
+    font-family: var(--body-text-font);
+    padding: .3rem;
+    line-height: 1.5;
+    font-size: 1.3rem;
 }
 
 
@@ -536,6 +571,11 @@ form {
 
     .address p {
         padding: .9rem;
+    }
+
+    .about-section {
+        width: 100%;
+        display: flex;
     }
 
 
