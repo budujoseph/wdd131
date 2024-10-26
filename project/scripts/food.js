@@ -139,6 +139,7 @@ const refreshers = [
 
 function createRefreshersSect(fresherMenu) {
     fresherMenu.forEach(fresher => {
+        // document.getElementById('menuItems').innerHTML = '';
         let section = document.createElement('section');
         section.classList.add('myfresher');
 
@@ -157,12 +158,15 @@ function createRefreshersSect(fresherMenu) {
         section.appendChild(name);
         section.appendChild(price);
 
-        // document.getElementById('#').appendChild(section);
+        document.getElementById('menuItems').appendChild(section);
 
     });
 
-
 }
+
+// document.addEventListener('DOMContentLoaded', createRefreshersSect(refreshers));
+
+
 
 
 
@@ -177,7 +181,8 @@ dessert.addEventListener('click', () => {
 });
 
 document.addEventListener('DOMContentLoaded', createMenuSect(menuItems));
-document.addEventListener('DOMContentLoaded', createRefreshersSect(refreshers));
+// document.addEventListener('DOMContentLoaded', createRefreshersSect(refreshers));
+
 
 
 

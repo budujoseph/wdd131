@@ -481,6 +481,8 @@ form {
     line-height: 1.5;
     font-size: 1.3rem;
     width: 100%;
+    text-indent: 1.9rem;
+    padding-left: 1.9rem;
 }
 
 .team h3 {
