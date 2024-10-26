@@ -42,21 +42,20 @@ h1 {
     color: var(--heading-color);
 }
 
-li a {
+header li a {
 	text-decoration: none;
 	font-size: 20px;
 	font-weight: 700;
-	padding: 10px;
-	color: #f2f7f2;
+	padding: .3rem;
+    color: var(--heading-color);
+	/* color: #f2f7f2; */
+    font-family: var(--heading-and-navigations-font);
 }
 
 header nav ul {
 	list-style: none;
 } 
 
-header nav:hover {
-	cursor: pointer;
-}
 
 header nav ul li {
 	display: none;
@@ -67,6 +66,7 @@ header nav ul li a:hover {
 	color: black;
 	background-color: white;
 	border-radius: 4px;
+    cursor: pointer;
 }
 
 header nav::before {
@@ -89,7 +89,7 @@ header nav.show::before{
 
 nav ul li a.active {
     color: var(--heading-color);
-    background-color: #fff; 
+    background-color: #ffe5;
     border-radius: 4px;
     font-weight: bold;
     text-decoration: underline;
@@ -346,13 +346,18 @@ footer p{
 .menu-nav ul li a {
     text-decoration: none !important;
     font-size: 1.5rem;
+    color: var(--heading-color);
+    font-family: var(--heading-and-navigations-font);
+    padding: .9rem;
+    border-radius: 8px;
+    
 }
 
 .menu-nav ul li a:hover {
     background-color: grey;
     cursor: pointer;
     color: black;
-}
+} 
 
 .address h2 {
     font-size: 1.5rem;
@@ -539,8 +544,9 @@ form {
 
     header nav ul {
         display: flex;
-        justify-content:space-between;
+        justify-content:space-around;
         padding-top: 1em;
+        margin-left: -2rem;
     }
 
     header nav::before {
@@ -551,6 +557,7 @@ form {
         display: block;
         padding: 5px 20px;
     }
+
 
     .hero p {
         list-style: none;
@@ -606,7 +613,6 @@ form {
         gap: 1.5rem;
         margin-top: 2rem;
     }
-
 
     
 
