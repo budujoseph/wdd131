@@ -21,6 +21,16 @@ navLinks.forEach(link => {
     }
 })
 
+function myFunc(event) {
+    event.preventDefault();
+
+    const emailInput = document.getElementById('emailInput').value;
+    localStorage.setItem('userEmail', emailInput);
+   
+    window.location.href = "thanks.html";
+}
+
+
 
 const menuItems = [
     {
@@ -90,24 +100,6 @@ function createMenuSect(foodMenu) {
 document.addEventListener('DOMContentLoaded' , () => {
     createMenuSect(menuItems);
 })
-
-
-function myFunc(event) {
-    event.preventDefault();
-
-    const emailInput = document.getElementById('emailInput').value;
-    localStorage.setItem('userEmail', emailInput);
-   
-    window.location.href = "thanks.html";
-}
-
-
-
-
-
- 
-
-
 
 
 const drink = document.getElementById('drinks');

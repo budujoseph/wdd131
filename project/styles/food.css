@@ -156,10 +156,11 @@ h2 {
     border: solid 1px rgb(209, 197, 197);
     border-radius: 7px;
     flex-wrap: wrap;
-    font-family: "Roboto", sans-serif;
+    font-family: var(--body-text-font);
     margin-top: 2rem;
-    background-color: azure;
+    background-color: rgb(230, 236, 236);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: .5rem;
 }
 
 #subform {
