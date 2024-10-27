@@ -124,11 +124,11 @@ const refreshers = [
     },
 
     {
-        name: "Cocacola",
+        name: "Coca cola",
         price: "GH₵17.00",
         category: "Drink",
         imgURL:
-            "https://images.pexels.com/photos/39720/pexels-photo-39720.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/4113619/pexels-photo-4113619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
 
     {
@@ -152,19 +152,19 @@ const refreshers = [
         price: "GH₵16.00",
         category: 'Dessert',
         imgURL:
-            "https://images.pexels.com/photos/5372850/pexels-photo-5372850.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https://images.pexels.com/photos/306070/pexels-photo-306070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
 
 ];
 
 function createRefreshersSect(fresherMenu) {
+    document.getElementById('menuItems').innerHTML = '';
     fresherMenu.forEach(fresher => {
-        document.getElementById('menuItems').innerHTML = '';
         let section = document.createElement('section');
-        section.classList.add('myfresher');
+        section.classList.add('mymenu');
 
         let img = document.createElement('img');
-        let name = document.createElement('h2');
+        let name = document.createElement('h3');
         let price = document.createElement('p');
 
         img.setAttribute('src', fresher.imgURL);
@@ -185,10 +185,6 @@ function createRefreshersSect(fresherMenu) {
 }
 
 // document.addEventListener('DOMContentLoaded', createRefreshersSect(refreshers));
-
-
-
-
 
 drink.addEventListener('click', (event) => {
     event.preventDefault();
