@@ -87,6 +87,26 @@ function createMenuSect(foodMenu) {
     });
 }
 
+document.addEventListener('DOMContentLoaded' , () => {
+    createMenuSect(menuItems);
+})
+
+
+function myFunc(event) {
+    event.preventDefault();
+
+    const emailInput = document.getElementById('emailInput').value;
+    localStorage.setItem('userEmail', emailInput);
+   
+    window.location.href = "thanks.html";
+}
+
+
+
+
+
+ 
+
 
 
 
@@ -139,7 +159,7 @@ const refreshers = [
 
 function createRefreshersSect(fresherMenu) {
     fresherMenu.forEach(fresher => {
-        // document.getElementById('menuItems').innerHTML = '';
+        document.getElementById('menuItems').innerHTML = '';
         let section = document.createElement('section');
         section.classList.add('myfresher');
 
@@ -170,18 +190,21 @@ function createRefreshersSect(fresherMenu) {
 
 
 
-drink.addEventListener('click', () => {
-    createRefreshersSect(refreshers.filter(fresher => fresher.category === "Drink"));
-    window.location.href = "drinks.html";
+drink.addEventListener('click', (event) => {
+    event.preventDefault();
+    const drinkItems = refreshers.filter(fresher => fresher.category === "Drink");
+    createRefreshersSect(drinkItems);
 });
 
-dessert.addEventListener('click', () => {
-    createRefreshersSect(refreshers.filter(fresher => fresher.category === "Dessert"));
-    window.location.href = "dessert.html";
+dessert.addEventListener('click', (event) => {
+    event.preventDefault();
+    const dessertItems = refreshers.filter(fresher => fresher.category === "Dessert");
+    createRefreshersSect(dessertItems);
 });
 
-document.addEventListener('DOMContentLoaded', createMenuSect(menuItems));
+// document.addEventListener('DOMContentLoaded', createMenuSect(menuItems));
 // document.addEventListener('DOMContentLoaded', createRefreshersSect(refreshers));
+
 
 
 
