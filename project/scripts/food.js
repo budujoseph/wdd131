@@ -176,7 +176,7 @@ function createRefreshersSect(fresherMenu) {
 
 }
 
-// document.addEventListener('DOMContentLoaded', createRefreshersSect(refreshers));
+
 
 drink.addEventListener('click', (event) => {
     event.preventDefault();
@@ -190,8 +190,7 @@ dessert.addEventListener('click', (event) => {
     createRefreshersSect(dessertItems);
 });
 
-// document.addEventListener('DOMContentLoaded', createMenuSect(menuItems));
-// document.addEventListener('DOMContentLoaded', createRefreshersSect(refreshers));
+
 
 
 
